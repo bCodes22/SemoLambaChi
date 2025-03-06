@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Users, Heart, GraduationCap } from 'lucide-react';
+import BackImage from "../Lambda/Background.jpg";  // Ensure the path is correct
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <section
         className="relative h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80')"
+          backgroundImage: `url(${BackImage})`
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50" />
@@ -102,19 +103,55 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Follow Our Journey</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="aspect-square">
+            {/* Instagram Post 1 */}
+            <div className="aspect-square">
+              <a href="https://www.instagram.com/p/DBr2mT3R8tK/?img_index=3&igsh=ZXB3aG90MHdrNzFu" target="_blank" rel="noopener noreferrer">
                 <img
-                  src={`https://images.unsplash.com/photo-${i === 1 ? '1523580846011-d3a5bc25702b' : i === 2 ? '1523580494863-6f3031224c94' : i === 3 ? '1523580785273-922f78ac3018' : '1523580494863-6f3031224c94'}?w=600&q=80`}
-                  alt={`Instagram Post ${i}`}
+                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
+                  alt="Instagram Post 1"
                   className="w-full h-full object-cover rounded-lg"
                 />
-              </div>
-            ))}
+              </a>
+            </div>
+
+            {/* Instagram Post 2 */}
+            <div className="aspect-square">
+              <a href="https://www.instagram.com/p/DF_Q_zRywTb/?img_index=7&igsh=MXNmZHY1MnFsZHRmNw==" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
+                  alt="Instagram Post 2"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </a>
+            </div>
+
+            {/* Instagram Post 3 */}
+            <div className="aspect-square">
+              <a href="https://www.instagram.com/p/DCuwet-Sfeu/?img_index=1&igsh=MWE1Y28zZjVzOWdwNg==" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
+                  alt="Instagram Post 3"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </a>
+            </div>
+
+            {/* Instagram Post 4 */}
+            <div className="aspect-square">
+              <a href="https://www.instagram.com/p/Cs1deydg7Em/?img_index=2&igsh=MW90dno2Z2J6eDB0OA==" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
+                  alt="Instagram Post 4"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </a>
+            </div>
           </div>
           <div className="text-center mt-8">
             <a
-              href="#"
+              href="https://www.instagram.com/semolambdachi"  // Replace with your Instagram account URL
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-purple-700 hover:text-purple-600 font-semibold"
             >
               Follow us on Instagram
