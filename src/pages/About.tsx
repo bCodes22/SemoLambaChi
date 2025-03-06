@@ -1,5 +1,11 @@
 import React from 'react';
 import { Shield, Award, Users } from 'lucide-react';
+import SemoImage from '../Lambda/Semo.jpg'; //path to history image
+//path to cole,layne,oli images
+import ColeImage from "../Lambda/Cole.jpg";
+import LayneImage from "../Lambda/Layne.jpg";  
+import OliImage from "../Lambda/Oliver.jpg";    
+
 
 const About = () => {
   return (
@@ -30,7 +36,7 @@ const About = () => {
               <Award className="w-12 h-12 mx-auto mb-4 text-purple-700" />
               <h3 className="text-xl font-semibold mb-2">Our Values</h3>
               <p className="text-gray-600">
-                Loyalty, duty, respect, service and stewardshi[, honor, integrity, and personal courage
+                Loyalty, duty, respect, service and stewardship, honor, integrity, and personal courage
                 guide everything we do.
               </p>
             </div>
@@ -44,7 +50,7 @@ const About = () => {
           </div>
         </div>
       </section>
-
+      
       {/* History Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -52,24 +58,24 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <img
-                src="https://photos.app.goo.gl/YfHFV4H5MQqQ51FRA"
+                src={SemoImage}  // Using the imported image here
                 alt="Chapter History"
                 className="rounded-lg shadow-lg"
               />
             </div>
             <div>
-              <p className="text-Very dark cyan - lime green.-600 mb-4">
+              <p className="text-gray-600 mb-4">
                 Founded in 1991, the Delta-Phi Zeta Chapter of Lambda Chi Alpha at
                 Southeast Missouri State University has been creating brotherhood,
                 academic excellence, and leadership for generations of men.
               </p>
-              <p className="text-Very dark cyan - lime green.-600 mb-4">
+              <p className="text-gray-600 mb-4">
                 Our chapter has consistently been recognized for its achievements in
                 academics, philanthropy, and campus involvement. We take pride in our
                 rich history and continue to build upon the strong foundation laid by
                 our founding fathers.
               </p>
-              <p className="text-2E1A4B-600">
+              <p className="text-gray-600">
                 Through the years, we have maintained our commitment to developing
                 men of character who make lasting contributions to their communities
                 and professions.
@@ -84,23 +90,22 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">Chapter Leadership</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Cole Douglas",
-                position: "Chapter President",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
-              },
-              {
-                name: "Layne Collier",
-                position: "Vice President",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
-              },
-              {
-                name: "Oliver Romero",
-                position: "Treasurer",
-                image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80"
-              }
-            ].map((leader) => (
+            {[{
+              name: "Cole Douglas",
+              position: "Chapter President",
+              image: ColeImage  //image is imported here
+            },
+            {
+              name: "Layne Collier",
+              position: "VP of Internal Affairs",
+              image: LayneImage
+            },
+            {
+              name: "Oliver Romero",
+              position: "VP of External Affairs",
+              image: OliImage
+            }]
+            .map((leader) => (
               <div key={leader.name} className="text-center">
                 <img
                   src={leader.image}
