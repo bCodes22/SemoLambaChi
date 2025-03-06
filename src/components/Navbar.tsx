@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Moon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '../Lambda/crescent.png'; // import your logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <Moon className="h-8 w-8 text-purple-700" />
+              <img src={logo} alt="Lambda Chi Alpha Logo" className="h-8 w-8" /> {/* use logo here */}
               <div className="ml-3">
                 <div className="text-xl font-bold text-purple-900">Lambda Chi Alpha</div>
                 <div className="text-sm text-gray-600">Delta-Phi Zeta Chapter</div>
