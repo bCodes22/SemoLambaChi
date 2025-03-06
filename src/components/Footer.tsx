@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Mail, Moon } from 'lucide-react';
+import { Facebook, Instagram, Mail } from 'lucide-react';
+// Import your logo image
+import logo from '../Lambda/crescent.png'; // adjust the path as needed
 
 const Footer = () => {
   return (
@@ -9,7 +11,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <Moon className="h-8 w-8 text-purple-400" />
+              {/* Use the imported image */}
+              <img src={logo} alt="Lambda Chi Alpha Logo" className="h-8 w-8" />
               <span className="ml-2 text-xl font-bold">Lambda Chi Alpha</span>
             </div>
             <p className="text-gray-400">
