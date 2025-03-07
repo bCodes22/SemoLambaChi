@@ -51,25 +51,25 @@ const Brotherhood = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "James Wilson",
+                name: "Layton Karcher",
                 year: "Senior",
-                major: "Business Administration",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
-                quote: "Lambda Chi Alpha has given me lifelong friendships and invaluable leadership experience."
+                major: "Mcdonalds",
+                image: "",
+                quote: "Lambda Chi Alpha has given me lifelong friendships, invaluable leadership experience and Kyle Fischer"
               },
               {
-                name: "Robert Chen",
-                year: "Junior",
-                major: "Computer Science",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
-                quote: "Being part of this brotherhood has helped me grow both personally and professionally."
+                name: "Jack Ladig",
+                year: "Senior",
+                major: "Education",
+                image: "",
+                quote: "Being part of this brotherhood has helped me grow my muslces."
               },
               {
-                name: "Marcus Thompson",
-                year: "Sophomore",
-                major: "Engineering",
-                image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80",
-                quote: "The support and mentorship I've received from my brothers is invaluable."
+                name: "Zach Grossmann",
+                year: "Senior",
+                major: "Spirits",
+                image: "",
+                quote: "The Spirits are high with this chapter"
               }
             ].map((brother) => (
               <div key={brother.name} className="bg-white rounded-lg shadow-md overflow-hidden">
