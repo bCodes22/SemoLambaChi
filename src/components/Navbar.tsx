@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src={logo} alt="Lambda Chi Alpha Logo" className="h-8 w-8" /> {/* use logo here */}
+              <img src={logo} alt="Lambda Chi Alpha Logo" className="h-8 w-8" />
               <div className="ml-3">
                 <div className="text-xl font-bold text-purple-900">Lambda Chi Alpha</div>
                 <div className="text-sm text-gray-600">Delta-Phi Zeta Chapter</div>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+                  className="px-4 py-2 text-base font-medium text-gray-700 hover:text-purple-700 transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-700 hover:bg-gray-50"
+                className="block px-4 py-2 text-base font-medium text-gray-700 hover:text-purple-700 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
