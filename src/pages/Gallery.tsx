@@ -1,78 +1,24 @@
 import React, { useState } from 'react';
 
-// Define image categories and their collections
+// Import your local images
+// Example structure - replace with your actual images
 const imageGallery = {
   brotherhood: [
-    {
-      url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80",
-      caption: "Brotherhood Event 2024"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
-      caption: "Chapter Meeting"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1554744512-d6c603f27c54?w=800&q=80",
-      caption: "Social Event"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80",
-      caption: "Campus Activity"
-    }
+    // Add your brotherhood images here
+    // Example:
+    // {
+    //   url: "/images/brotherhood/event1.jpg",
+    //   caption: "Brotherhood Event 2024"
+    // }
   ],
   philanthropy: [
-    {
-      url: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
-      caption: "Scott Wood Classic 2024"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80",
-      caption: "Community Service"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=800&q=80",
-      caption: "Food Drive"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1523580785273-922f78ac3018?w=800&q=80",
-      caption: "Charity Event"
-    }
+    // Add your philanthropy images here
   ],
   social: [
-    {
-      url: "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800&q=80",
-      caption: "Formal 2024"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&q=80",
-      caption: "Alumni Weekend"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80",
-      caption: "Chapter Dinner"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
-      caption: "Campus Event"
-    }
+    // Add your social event images here
   ],
   recruitment: [
-    {
-      url: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80",
-      caption: "Rush Week"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80",
-      caption: "Meet the Chapter"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
-      caption: "Information Session"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
-      caption: "Welcome Event"
-    }
+    // Add your recruitment images here
   ]
 };
 
