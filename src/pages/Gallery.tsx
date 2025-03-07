@@ -17,16 +17,24 @@ const Gallery = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {/* Add your images here using this template */}
-            {/* Example:
+            {/* Example grid item with placeholder image */}
             <div className="aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-              <img
-                src="/path/to/your/image.jpg"
-                alt="Event description"
-                className="w-full h-full object-cover"
-              />
+              <div className="w-full h-full bg-gray-300"></div> {/* Placeholder for image */}
             </div>
-            */}
+
+            <div className="aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+              <div className="w-full h-full bg-gray-300"></div> {/* Placeholder for image */}
+            </div>
+
+            <div className="aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+              <div className="w-full h-full bg-gray-300"></div> {/* Placeholder for image */}
+            </div>
+
+            <div className="aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+              <div className="w-full h-full bg-gray-300"></div> {/* Placeholder for image */}
+            </div>
+
+            {/* You can add more image placeholders here as needed */}
           </div>
         </div>
       </section>
