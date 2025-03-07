@@ -96,7 +96,7 @@ const Brotherhood = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80"
+                src=""
                 alt="Brotherhood Event"
                 className="rounded-lg shadow-lg mb-4"
               />
@@ -108,7 +108,7 @@ const Brotherhood = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80"
+                src=""
                 alt="Community Service"
                 className="rounded-lg shadow-lg mb-4"
               />
