@@ -10,7 +10,7 @@ const Events = () => {
       time: "Various Times",
       location: "Campus Center",
       description: "Join us for a week of events to learn more about Lambda Chi Alpha and meet our brothers.",
-      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80"
+      image: ""
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Events = () => {
       time: "6:00 PM - 8:00 PM",
       location: "University Union",
       description: "Connect with Lambda Chi Alpha alumni and learn about career opportunities.",
-      image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=800&q=80"
+      image: ""
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Events = () => {
       time: "9:00 AM - 2:00 PM",
       location: "Cape Girardeau Community Center",
       description: "Join us for our monthly community service event helping local organizations.",
-      image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80"
+      image: ""
     }
   ];
 
@@ -101,10 +101,10 @@ const Events = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Event Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
-              "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
-              "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&q=80",
-              "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80"
+              "",
+              "",
+              "",
+              ""
             ].map((image, index) => (
               <div key={index} className="aspect-square">
                 <img
