@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: 'Events', path: '/events' },
     { name: 'Philanthropy', path: '/philanthropy' },
     { name: 'Alumni', path: '/alumni' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
   ];
 
