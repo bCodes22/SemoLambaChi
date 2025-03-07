@@ -4,7 +4,15 @@ import SemoImage from '../Lambda/Home.jpeg'; //path to history image
 //path to cole,layne,oli images
 import ColeImage from "../Lambda/Cole.jpg";
 import LayneImage from "../Lambda/Layne.jpg";  
-import OliImage from "../Lambda/Oliver.jpg";    
+import OliImage from "../Lambda/Oliver.jpg";
+import ZaviorImage from "../Lambda/Zavior.jpg";
+import GrantImage from "../Lambda/Grant.jpg";
+import LaytonImage from "../Lambda/Layton.jpg";
+import HbImage from "../Lambda/HB.jpg"; 
+import JackImage from "../Lambda/Jack.jpg";
+import ClaytonImage from "../Lambda/Claydiddy.jpg"; 
+import JamesImage from "../Lambda/James.jpg";
+import BigNate from "../Lambda/Nate.jpg";     
 
 
 const About = () => {
@@ -108,42 +116,42 @@ const About = () => {
             {
               name: "Zavior Mize",
               position: "Secretary",
-              image: ""
+              image: ZaviorImage
             },
             {
               name: "Layton Karcher",
               position: "Treasurer",
-              image: ""
+              image: LaytonImage
             },
             {
               name: "Grant Hoffman",
               position: "Risk Management",
-              image: ""
+              image: GrantImage
             },
             {
               name: "Andrew Keane",
               position: "Recruitment Chair",
-              image: ""
+              image: HbImage
             },
             {
               name: "Jack Ladig",
               position: "Educator",
-              image: ""
+              image: JackImage
             },
             {
               name: "Clayton Waldeck",
               position: "Academic Affairs",
-              image: ""
+              image: ClaytonImage
             },
             {
               name: "James Antoni",
               position: "Alumni Relations",
-              image: ""
+              image: JamesImage
             },
             {
               name: "Nathan Mccarthy",
               position: "Academic Affairs",
-              image: ""
+              image: BigNate
             }]
             .map((leader) => (
               <div key={leader.name} className="text-center">
