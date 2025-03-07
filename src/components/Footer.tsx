@@ -35,20 +35,32 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <p className="text-gray-400">
               Cape Girardeau, MO 63701<br />
-              Email: contact@deltaphizeta.org
+              Email: <a href="mailto:contact@deltaphizeta.org" className="text-purple-400 hover:text-purple-300">contact@deltaphizeta.org</a>
             </p>
           </div>
-
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-purple-400">
+              <a 
+                href="https://www.facebook.com/semolambdachi" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-purple-400"
+              >
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400">
+              <a 
+                href="https://www.instagram.com/semolambdachi" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-purple-400"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="mailto:contact@deltaphizeta.org" className="text-gray-400 hover:text-purple-400">
+              <a 
+                href="mailto:contact@deltaphizeta.org" 
+                className="text-gray-400 hover:text-purple-400"
+              >
                 <Mail className="h-6 w-6" />
               </a>
             </div>
