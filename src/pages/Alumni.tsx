@@ -51,25 +51,25 @@ const Alumni = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Thomas Anderson",
-                year: "Class of 2015",
-                position: "Senior Software Engineer at Google",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
-                quote: "The leadership skills I developed in Lambda Chi Alpha were instrumental in my career success."
+                name: "Harry S. Truman",
+                year: "Initiated in 1945",
+                position: "The 33rd President of the United States",
+                image: "",
+                quote: "It is amazing what you can accomplish if you do not care who gets the credit"
               },
               {
-                name: "William Parker",
-                year: "Class of 2010",
-                position: "Managing Director at Goldman Sachs",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
-                quote: "The network I built through our fraternity opened doors throughout my career."
+                name: "Nolan Briegel",
+                year: "",
+                position: "",
+                image: "",
+                quote: ""
               },
               {
-                name: "Michael Zhang",
-                year: "Class of 2018",
-                position: "Startup Founder",
-                image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80",
-                quote: "The entrepreneurial spirit I developed as chapter president inspired me to start my own company."
+                name: "",
+                year: "",
+                position: "",
+                image: "",
+                quote: ""
               }
             ].map((alumni) => (
               <div key={alumni.name} className="bg-white rounded-lg shadow-md overflow-hidden">
