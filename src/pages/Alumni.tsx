@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Building, Gift } from 'lucide-react';
+import HarryS from "../Lambda/HarryS.jpg";
 
 const Alumni = () => {
   return (
@@ -54,7 +55,7 @@ const Alumni = () => {
                 name: "Harry S. Truman",
                 year: "Initiated in 1945",
                 position: "The 33rd President of the United States",
-                image: "",
+                image: HarryS,
                 quote: "It is amazing what you can accomplish if you do not care who gets the credit"
               },
               {
