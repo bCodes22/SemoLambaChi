@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Award, Users } from 'lucide-react';
-import SemoImage from '../Lambda/Semo.jpg'; //path to history image
+import SemoImage from '../Lambda/Home.jpeg'; //path to history image
 //path to cole,layne,oli images
 import ColeImage from "../Lambda/Cole.jpg";
 import LayneImage from "../Lambda/Layne.jpg";  
@@ -104,6 +104,46 @@ const About = () => {
               name: "Oliver Romero",
               position: "VP of External Affairs",
               image: OliImage
+            },
+            {
+              name: "Zavior Mize",
+              position: "Secretary",
+              image: ""
+            },
+            {
+              name: "Layton Karcher",
+              position: "Treasurer",
+              image: ""
+            },
+            {
+              name: "Grant Hoffman",
+              position: "Risk Management",
+              image: ""
+            },
+            {
+              name: "Andrew Keane",
+              position: "Recruitment Chair",
+              image: ""
+            },
+            {
+              name: "Jack Ladig",
+              position: "Educator",
+              image: ""
+            },
+            {
+              name: "Clayton Waldeck",
+              position: "Academic Affairs",
+              image: ""
+            },
+            {
+              name: "James Antoni",
+              position: "Alumni Relations",
+              image: ""
+            },
+            {
+              name: "Nathan Mccarthy",
+              position: "Academic Affairs",
+              image: ""
             }]
             .map((leader) => (
               <div key={leader.name} className="text-center">
