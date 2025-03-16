@@ -62,7 +62,7 @@ const Brotherhood = () => {
                 year: "Senior",
                 major: "Education",
                 image: "",
-                quote: "Being part of this brotherhood has helped me grow my muslces."
+                quote: "Being part of this brotherhood has helped me grow my muscles."
               },
               {
                 name: "Zach Grossmann",
