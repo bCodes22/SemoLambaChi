@@ -150,7 +150,7 @@ const About = () => {
             },
             {
               name: "Nathan Mccarthy",
-              position: "Academic Affairs",
+              position: "Social Relations",
               image: BigNate
             }]
             .map((leader) => (
