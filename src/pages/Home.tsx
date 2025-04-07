@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Users, Heart, GraduationCap } from 'lucide-react';
 import BackImage from "../Lambda/Background.jpg";
-import InstaPost1 from '../Lambda/Instapost.jpg';
+import InstaPost1 from '../Lambda/Instapost.jpeg';
 import InstaPost2 from '../Lambda/Instapost2.jpg';
 import InstaPost3 from '../Lambda/Instapost3.jpg';
 
