@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Users, Heart, GraduationCap } from 'lucide-react';
-import BackImage from "../Lambda/Background.jpg";  // Ensure the path is correct
+import BackImage from "../Lambda/Background.jpg";
+import InstaPost1 from '../Lambda/Instapost.jpg';
+import InstaPost2 from '../Lambda/Instapost2.jpg';
+import InstaPost3 from '../Lambda/Instapost3.jpg';
 
 const Home = () => {
   return (
@@ -28,42 +31,6 @@ const Home = () => {
             >
               Join Our Brotherhood
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <Users className="w-12 h-12 mx-auto mb-4 text-purple-700" />
-              <h3 className="text-xl font-semibold mb-2">Brotherhood</h3>
-              <p className="text-gray-600">
-                Join a lifelong brotherhood built on shared values and experiences
-              </p>
-            </div>
-            <div className="text-center">
-              <GraduationCap className="w-12 h-12 mx-auto mb-4 text-purple-700" />
-              <h3 className="text-xl font-semibold mb-2">Academic Excellence</h3>
-              <p className="text-gray-600">
-                Committed to academic success and personal growth
-              </p>
-            </div>
-            <div className="text-center">
-              <Heart className="w-12 h-12 mx-auto mb-4 text-purple-700" />
-              <h3 className="text-xl font-semibold mb-2">Philanthropy</h3>
-              <p className="text-gray-600">
-                Making a positive impact in our community
-              </p>
-            </div>
-            <div className="text-center">
-              <Calendar className="w-12 h-12 mx-auto mb-4 text-purple-700" />
-              <h3 className="text-xl font-semibold mb-2">Events</h3>
-              <p className="text-gray-600">
-                Regular social events and networking opportunities
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -104,19 +71,18 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Follow Our Journey</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              "https://www.instagram.com/p/DBr2mT3R8tK/",
-              "https://www.instagram.com/p/DHo9MUMMmDQ/",
-              "https://www.instagram.com/p/DF_Q_zRywTb/"
-            ].map((url, index) => (
+              { url: "https://www.instagram.com/semolambdachi", img: InstaPost1 },
+              { url: "https://www.instagram.com/semolambdachi", img: InstaPost2 },
+              { url: "https://www.instagram.com/semolambdachi", img: InstaPost3 }
+            ].map((post, index) => (
               <div key={index}>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      <blockquote class="instagram-media" data-instgrm-permalink="${url}" data-instgrm-version="14" style="width:100%;"></blockquote>
-                      <script async src="https://www.instagram.com/embed.js"></script>
-                    `
-                  }}
-                />
+                <a href={post.url} target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src={post.img} 
+                    alt={`Instagram Post ${index + 1}`} 
+                    className="w-full h-64 object-cover rounded-lg transition-transform transform hover:scale-105"
+                  />
+                </a>
               </div>
             ))}
           </div>
