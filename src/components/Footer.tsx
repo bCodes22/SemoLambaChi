@@ -35,9 +35,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <p className="text-gray-400">
               Cape Girardeau, MO 63701<br />
-             Email: <a href="mailto:lambdachirushchair@gmail.com" className="text-[#FFB71D] hover:text-yellow-300">lambdachirushchair@gmail.com</a>
+              Email: <a href="mailto:lambdachirushchair@gmail.com" className="text-[#FFB71D] hover:text-yellow-300">lambdachirushchair@gmail.com</a>
             </p>
           </div>
+          
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
@@ -58,7 +59,7 @@ const Footer = () => {
                 <Instagram className="h-6 w-6" />
               </a>
               <a 
-                href="lambdachirushchair@gmail.com" 
+                href="mailto:lambdachirushchair@gmail.com" 
                 className="text-gray-400 hover:text-purple-400"
               >
                 <Mail className="h-6 w-6" />
