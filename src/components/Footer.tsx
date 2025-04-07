@@ -35,7 +35,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <p className="text-gray-400">
               Cape Girardeau, MO 63701<br />
-              Email: <a href="mailto:lambdachirushchair@gmail.com" className="className="text-[#FFB71D] hover:text-yellow-300">lambdachirushchair@gmail.com</a>
+             Email: <a href="mailto:lambdachirushchair@gmail.com" className="text-[#FFB71D] hover:text-yellow-300">lambdachirushchair@gmail.com</a>
             </p>
           </div>
           <div>
