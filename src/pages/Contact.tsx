@@ -35,14 +35,14 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-purple-700 mr-4 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-gray-600">contact@deltaphizeta.org</p>
+                    <p className="text-gray-600">lambdachirushchair@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-purple-700 mr-4 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600"></p>
                   </div>
                 </div>
                 <div className="flex items-start">
