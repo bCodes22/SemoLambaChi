@@ -59,7 +59,7 @@ const Alumni = () => {
                 quote: "It is amazing what you can accomplish if you do not care who gets the credit"
               },
               {
-                name: "Nolan Briegel",
+                name: "",
                 year: "",
                 position: "",
                 image: "",
