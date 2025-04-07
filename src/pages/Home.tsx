@@ -102,54 +102,26 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Follow Our Journey</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {/* Instagram Post 1 */}
-            <div className="aspect-square">
-              <a href="https://www.instagram.com/p/DBr2mT3R8tK/?img_index=3&igsh=ZXB3aG90MHdrNzFu" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
-                  alt="Instagram Post 1"
-                  className="w-full h-full object-cover rounded-lg"
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Instagram Embeds */}
+            {[
+              "https://www.instagram.com/p/DBr2mT3R8tK/",
+              "https://www.instagram.com/p/DF_Q_zRywTb/",
+              "https://www.instagram.com/p/DCuwet-Sfeu/",
+              "https://www.instagram.com/p/Cs1deydg7Em/"
+            ].map((url, index) => (
+              <div key={index}>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `<blockquote class="instagram-media" data-instgrm-permalink="${url}" data-instgrm-version="14"></blockquote><script async src="//www.instagram.com/embed.js"></script>`
+                  }}
                 />
-              </a>
-            </div>
-
-            {/* Instagram Post 2 */}
-            <div className="aspect-square">
-              <a href="https://www.instagram.com/p/DF_Q_zRywTb/?img_index=7&igsh=MXNmZHY1MnFsZHRmNw==" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
-                  alt="Instagram Post 2"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </a>
-            </div>
-
-            {/* Instagram Post 3 */}
-            <div className="aspect-square">
-              <a href="https://www.instagram.com/p/DCuwet-Sfeu/?img_index=1&igsh=MWE1Y28zZjVzOWdwNg==" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
-                  alt="Instagram Post 3"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </a>
-            </div>
-
-            {/* Instagram Post 4 */}
-            <div className="aspect-square">
-              <a href="https://www.instagram.com/p/Cs1deydg7Em/?img_index=2&igsh=MW90dno2Z2J6eDB0OA==" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://via.placeholder.com/600"  // Replace with Instagram post preview if available
-                  alt="Instagram Post 4"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </a>
-            </div>
+              </div>
+            ))}
           </div>
           <div className="text-center mt-8">
             <a
-              href="https://www.instagram.com/semolambdachi"  // Replace with your Instagram account URL
+              href="https://www.instagram.com/semolambdachi"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-purple-700 hover:text-purple-600 font-semibold"
