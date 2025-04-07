@@ -68,6 +68,36 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Latest Chapter Achievements Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Latest Chapter Achievements</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                  src={`https://images.unsplash.com/photo-${i === 1 ? '1523580846011-d3a5bc25702b' : i === 2 ? '1523580494863-6f3031224c94' : '1523580785273-922f78ac3018'}?w=800&q=80`}
+                  alt="News"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">Chapter Achievement {i}</h3>
+                  <p className="text-gray-600 mb-4">
+                    Highlighting our recent accomplishments and community impact.
+                  </p>
+                  <Link
+                    to="/news"
+                    className="text-purple-700 hover:text-purple-600 font-semibold"
+                  >
+                    Read More →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Instagram Feed Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
